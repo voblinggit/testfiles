@@ -9,20 +9,8 @@ var x = document.getElementById("demo");
   
 var s1 = '{"item":"testItem"}';
 
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else { 
-    x.innerHTML = "Geolocation is not supported by this browser.";
-  }
-}
+document.getElementById("demo").innerHTML = s1;
 
-function showPosition(position) {
-  x.innerHTML = s1;
-  
-}
-
-getLocation();
 </script>
 
 </body>
