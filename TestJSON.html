@@ -6,6 +6,8 @@
 
 <script>
 var x = document.getElementById("demo");
+  
+var s1 = '{"item":"testItem"}';
 
 function getLocation() {
   if (navigator.geolocation) {
@@ -16,7 +18,7 @@ function getLocation() {
 }
 
 function showPosition(position) {
-  x.innerHTML = '{ item: "Item 16" }';
+  x.innerHTML = s1;
   
 }
 
